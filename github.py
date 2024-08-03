@@ -2,15 +2,14 @@
 A small Python program that uses the GitHub search API to list
 the top projects by language, based on stars.
 """
-
 import requests
 
 GITHUB_API_URL = "https://api.github.com/search/repositories"
 
-def create_query(languages, min_stars=50000):
+def create_query(languages, min_stars=90000):
     query = f"stars:>{min_stars} "
 
-    for launguage in languages:
+    for language in languages:
         query += f"language:{language} "
     return query
 
@@ -33,7 +32,7 @@ if __name__ == "__main__":
 
     for result in results:
         language = result["language"]
-        starts = result["stargazers_count"]
+        stars = result["stargazers_count"]
         name = result["name"]
 
         print(f"-> {name} is a {language} repo with {stars} stars.")
