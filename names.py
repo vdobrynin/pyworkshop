@@ -11,3 +11,8 @@ for name in names:
         break
 
 print("Done!")
+
+my_sum = sum([0, 1, 2, 3, 4])
+print(my_sum)
+
+
