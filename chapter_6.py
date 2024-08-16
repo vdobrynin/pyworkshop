@@ -19,9 +19,9 @@ class Car:
 
     def start(self):
         if self.runs:
-            print("Car is started. Vroom vroom!")
+            print("Car is started. Vroom vroom !!!")
         else:
-            print("Car is broken :(")
+            print("Car is broken :-(")
 
 my_car = Car()
 my_car.runs = False
