@@ -90,3 +90,21 @@ print(f"To reproduce it, type: {repr(my_car)}")
 # print(my_ints)
 # # [1, 2, 3]
 
+# # chapter_6.py
+# from vehicle import Vehicle, Car
+
+# my_car = Car("Ford", "Thunderbird")
+# print(f"my_car is type {type(my_car)}")
+# print(f"my_car uses {my_car.fuel}")
+
+# print(f"my_car is a Car: {isinstance(my_car, Car)}")
+# print(f"my_car is a Vehicle: {isinstance(my_car, Vehicle)}")
+# print(f"Car is a subclass of Vehicle: {issubclass(Car, Vehicle)}")
+
+# # chapter_6.py
+from vehicle import Truck
+ 
+my_truck = Truck("Ford", "F350")
+print(f"my_truck is type {type(my_truck)}")
+print(f"my_truck uses {my_truck.fuel}")
+print(f"my_truck has {my_truck.number_of_wheels} wheels") 
